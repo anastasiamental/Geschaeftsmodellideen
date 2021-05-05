@@ -1,0 +1,152 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+
+html, body {
+    margin:0;
+    height:100%;
+    min-height:100%;
+}
+
+body {    
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    padding: 10px;
+    flex: 6 0 85%;
+    overflow-y: auto;
+}
+
+p {
+    margin: 0;
+}
+
+  header {
+    border-bottom: 1px solid black;
+    padding: 5px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+        
+    flex: 1 0 10%;
+  }
+
+  .big-column {
+    flex-basis: 50%;
+  }
+
+  .medium-column {
+    flex-basis: 25%;
+  }
+
+  .medium-column {
+    text-align: center;
+  }
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.content .idea:first-child {
+    margin-top: 0px;
+}
+
+.idea {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-basis: 30%;
+    padding: 5px;
+}
+
+    .idea figure {
+        display: flex;
+        flex-direction: column;
+    }
+
+    figure img {
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+.idea .idea-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex: 1 0 30%;
+}
+
+.idea-actions .checkbox
+{
+    display: flex;
+    align-items: flex-end;
+}
+
+.lemon-action {
+    display: flex;
+    flex-direction: column;
+}
+
+.lemon-action .number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50px;
+}
+
+.number .lemons-actions {
+    display: flex;
+    flex-basis: 30%;
+    max-width: 100px;
+    max-height: 21px;
+    justify-content: space-around;
+}
+
+.lemons-actions > *
+{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.number .lemons-images {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+}
+
+.lemons-images svg {
+    min-width: 2em;
+    min-height: 2em;
+}
+
+.lemon-action p {
+    margin-left: 9px;
+}
+
+.navigation 
+{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navigation > *
+{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+.three-dots {
+    align-self: center;
+    font-size: 1.5em;
+}
